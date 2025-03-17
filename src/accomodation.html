@@ -421,6 +421,29 @@
   </div>
 </section>
 
+<!-- Floating Weather Button with Tooltip -->
+<div class="fixed bottom-5 right-5 group">
+  <button id="openModal" class="bg-yellow-300 text-white p-3 sm:p-4 rounded-full shadow-lg hover:bg-yellow-500 transition-all duration-300 transform hover:scale-110 hover:rotate-12">
+      <i class="fas fa-cloud-sun text-xl sm:text-2xl"></i> 
+  </button>
+  <div class="absolute bottom-12 right-0 bg-gray-800 text-white text-sm px-3 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+      Check Weather Now
+  </div>
+</div>
+
+<!-- Weather Modal -->
+<div id="weatherModal" class="fixed inset-0 z-50 flex items-center justify-center hidden font-[Roboto_Flex]">
+  <div class="bg-white p-4 sm:p-6 rounded-lg shadow-2xl w-11/12 sm:w-96">
+      <h2 class="text-xl sm:text-2xl font-bold mb-4 text-left text-[#242659]">Current Weather at Cebu</h2>
+      <div id="weatherContent" class="text-left space-y-2 sm:space-y-3">
+          <p class="text-gray-600">Loading...</p>
+      </div>
+      <button id="closeModal" class="mt-4 sm:mt-6 bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600 w-full transition-all duration-300 hover:shadow-lg">
+          Close
+      </button>
+  </div>
+</div>
+
 
 <!-- Footer -->
 <footer class="bg-[#242659] text-white py-8 sm:py-12">
@@ -537,6 +560,38 @@ function closeModal() {
   const modalVideo = document.getElementById('modalVideo');
   modalVideo.src = ''; // Reset the video source
 }
+
+const apiKey = "87583adbc66440f48db10422251403"; 
+    const city = "Cebu";
+    const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=no`;
+
+    async function fetchWeather() {
+        try {
+            const response = await fetch(url);
+            const data = await response.json();
+            document.getElementById("weatherContent").innerHTML = `
+                <p class="text-lg font-bold">${data.current.condition.text}</p>
+                <p><i class="fas fa-thermometer-half text-blue-500"></i> Temperature: ${data.current.temp_c}°C</p>
+                <p><i class="fas fa-wind text-green-500"></i> Wind: ${data.current.wind_kph} km/h</p>
+                <p><i class="fas fa-tint text-blue-300"></i> Humidity: ${data.current.humidity}%</p>
+            `;
+        } catch (error) {
+            document.getElementById("weatherContent").innerHTML = "<p class='text-red-500'>Error loading weather data.</p>";
+            console.error("Error fetching weather data:", error);
+        }
+    }
+
+    // Modal Controls
+    document.getElementById("openModal").addEventListener("click", () => {
+        document.getElementById("weatherModal").classList.remove("hidden");
+        fetchWeather(); // Fetch data when modal opens
+    });
+
+    document.getElementById("closeModal").addEventListener("click", () => {
+        document.getElementById("weatherModal").classList.add("hidden");
+    });
+
+    fetchWeather();
 </script>
 </body>
 </html>
