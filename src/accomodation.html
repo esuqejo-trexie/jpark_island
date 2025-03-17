@@ -1,0 +1,542 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <title>JPark Island Resort - Accommodations</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="bg-white text-[#222] fixed w-full max-w-[98%] rounded-2xl shadow-md font-sans z-10 my-3 mx-auto left-1/2 transform -translate-x-1/2">
+    <div class="container mx-auto flex justify-between items-center px-4 sm:px-8 py-4">
+      <a href="index.html" class="flex items-center h-16">
+        <img src="images/logo_blue.webp" alt="JPark Island Resort Logo" class="h-auto max-h-12">
+      </a>
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="index.html" class="text-lg font-medium hover:text-[#2887bf] transition duration-300">Home</a></li>
+        <li><a href="accomodation.html" class="text-lg font-medium hover:text-[#2887bf] transition duration-300">Accomodation</a></li>
+        <li><a href="adventures.html" class="text-lg font-medium hover:text-[#2887bf] transition duration-300">Adventures</a></li>
+        <li><a href="contact.html" class="text-lg font-medium hover:text-[#2887bf] transition duration-300">Contact Us</a></li>
+      </ul>
+      <a href="booknow.html" class="relative border border-[#242659] text-[#242659] px-4 py-2 rounded-full transition duration-300 overflow-hidden before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-0 before:w-0 before:rounded-full before:bg-[#242659] before:duration-300 before:ease-out hover:text-white hover:before:h-40 hover:before:w-40 hover:before:opacity-80">
+        <span class="relative z-10">Book Now</span>
+      </a>
+      
+      <button class="md:hidden text-[#242659] focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+<!-- Hero Section -->
+<section class="relative h-screen bg-[url('images/accomodation_bg.webp')] bg-cover bg-center flex items-center justify-center text-white">
+  <div class="absolute inset-0 bg-[#c6ac90]/30"></div>
+  <div class="relative text-center px-4">
+    <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl tracking-wide font-extrabold font-[Dancing_Script]">
+      Accomodation
+    </h1>
+    <h3 class="text-lg sm:text-xl md:text-2xl lg:text-3xl tracking-wide font-medium font-[Roboto_Flex] text-white">
+      Welcome to the Philippines’ Only 5-star Family Waterpark Resort!
+    </h3>
+  </div>
+</section>
+
+<section class="text-center py-6 md:py-8 lg:py-10">
+  <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold font-serif text-[#2887bf]">
+    ROOMS AND SUITES
+  </h1>
+  <p class="mt-4 mx-4 sm:mx-5 md:mx-10 lg:mx-15 text-base sm:text-lg font-[Roboto_Flex] text-gray-600 text-justify">
+    Jpark has been Cebu’s premier destination that provides clean and comfortable accommodation with top-notch
+    facilities and amenities, delightful cuisine, and attentive Filipino hospitality at a value conscious price.
+    We always strive for excellent and quality service to guarantee an enjoyable stay with a tremendous amount
+    of satisfaction and memorable experience. Throughout the years, we have set in stone an experience with fun
+    & luxury in one place. All 568 rooms, villas and suites, including our luxurious suite rooms in Cebu, are
+    elegantly furnished and equipped with modern conveniences. Whether you're looking for a relaxing stay or
+    luxurious escape, our hotel rooms in Cebu City provide the perfect setting for all your needs.
+    Come and join us as we take a look at the most spacious accommodations in the region.
+  </p>
+</section>
+
+<!-- Room Grid Section -->
+<section class="container mx-auto pt-1 pb-4 ps-4  pe-4 py-16">
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+    <!-- Room Card 1 -->
+    <div class="flex justify-center">
+      <div class="bg-white rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 relative group w-full max-w-md shadow-lg">
+        <div class="relative">
+          <img src="images/deluxe.webp" alt="Deluxe" class="w-full h-56 object-cover">              
+          <div class="absolute w-full h-full top-0 left-0 bg-black opacity-0 z-10 transition-opacity duration-300 group-hover:opacity-40"></div>        
+          <div class="absolute w-full h-full top-0 left-0 flex items-end justify-center opacity-0 z-20 transition-opacity duration-300 group-hover:opacity-100">
+            <p class="text-white text-center text-sm font-medium font-[Roboto_Flex] px-4 pb-4">
+              Indulge in the amenities of our deluxe rooms which overflow with charm and character.
+              This 38 square meter room is ideal for single or double occupancy.
+            </p>
+          </div>
+        </div>
+        <div class="p-4">
+          <div class="flex items-center justify-between">
+            <span class="text-lg font-medium font-serif">DELUXE</span>
+            <button onclick="openModal('DELUXE', 'https://www.youtube.com/embed/SbFnykGTMeo?si=l9BzDJtWIIAMEwzc', 'Indulge in the amenities of our deluxe rooms which overflow with charm and character.This 38 square meter room is ideal for single or double occupancy.', '₱18,170/night', '2 guests, featuring 1 king-size bed, breakfast for two', ['Private Outdoor Jacuzzi', 'Living Room', 'Free Wi-Fi', 'Air Conditioning', 'Outside Seating Area'])" 
+              class="relative mt-4 inline-block px-6 py-2 text-[#242659] border-b border-[#242659] overflow-hidden group transition-all duration-300">
+              <span class="absolute inset-0 w-0 bg-[#242659] transition-all duration-300 group-hover:w-full"></span>
+              <span class="relative z-10 transition-all duration-300 group-hover:text-white">Learn More →</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Room Card 2 -->
+    <div class="flex justify-center">
+      <div class="bg-white rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 relative group w-full max-w-md shadow-lg">
+        <div class="relative">
+          <img src="images/mactan.webp" alt="Mactan" class="w-full h-56 object-cover">              
+          <div class="absolute w-full h-full top-0 left-0 bg-black opacity-0 z-10 transition-opacity duration-300 group-hover:opacity-40"></div>        
+          <div class="absolute w-full h-full top-0 left-0 flex items-end justify-center opacity-0 z-20 transition-opacity duration-300 group-hover:opacity-100">
+            <p class="text-white text-center text-sm font-medium font-[Roboto_Flex] px-4 pb-4">
+              Unwind in one of our capacious 1-bedroom suites that has a floor area of 76 square meters with a lounge,
+              a walk in closet and a kitchenette good for 2 adults and 2 kids.
+            </p>
+            </p>
+          </div>
+        </div>
+        <div class="p-4">
+          <div class="flex items-center justify-between">
+            <span class="text-lg font-medium font-serif">MACTAN SUITE</span>
+            <button onclick="openModal('MACTAN SUITE', 'https://www.youtube.com/embed/om4EIUptZCg?si=9vo85as-sPFLCsy-', ' Unwind in one of our capacious 1-bedroom suites that has a floor area of 76 square meters with a lounge,a walk in closet and a kitchenette good for 2 adults and 2 kids.', '₱18,170/night', '2 guests, featuring 1 king-size bed, breakfast for two', ['Private Outdoor Jacuzzi', 'Living Room', 'Free Wi-Fi', 'Air Conditioning', 'Outside Seating Area'])" 
+              class="relative mt-4 inline-block px-6 py-2 text-[#242659] border-b border-[#242659] overflow-hidden group transition-all duration-300">
+              <span class="absolute inset-0 w-0 bg-[#242659] transition-all duration-300 group-hover:w-full"></span>
+              <span class="relative z-10 transition-all duration-300 group-hover:text-white">Learn More →</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Room Card 3 -->
+    <div class="flex justify-center">
+      <div class="bg-white rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 relative group w-full max-w-md shadow-lg">
+        <div class="relative">
+          <img src="images/pororo.webp" alt="Pororo" class="w-full h-56 object-cover">              
+          <div class="absolute w-full h-full top-0 left-0 bg-black opacity-0 z-10 transition-opacity duration-300 group-hover:opacity-40"></div>        
+          <div class="absolute w-full h-full top-0 left-0 flex items-end justify-center opacity-0 z-20 transition-opacity duration-300 group-hover:opacity-100">
+            <p class="text-white text-center text-sm font-medium font-[Roboto_Flex] px-4 pb-4">
+              Step into your 5-star dream at this amazing 76 square meter suite, our newest accommodation
+              facility which is fully-equipped with Pororo-themed amenities.
+            </p>
+            </p>
+          </div>
+        </div>
+        <div class="p-4">
+          <div class="flex items-center justify-between">
+            <span class="text-lg font-medium font-serif">PORORO SUITE</span>
+            <button onclick="openModal('PORORO SUITE', 'https://www.youtube.com/embed/aAlZrf1Fkgs?si=3l6jVXRjkVLaUEhg', 'Step into your 5-star dream at this amazing 76 square meter suite, our newest accommodation facility which is fully-equipped with Pororo-themed amenities.', '₱18,170/night', '2 guests, featuring 1 king-size bed, breakfast for two', ['Private Outdoor Jacuzzi', 'Living Room', 'Free Wi-Fi', 'Air Conditioning', 'Outside Seating Area'])" 
+              class="relative mt-4 inline-block px-6 py-2 text-[#242659] border-b border-[#242659] overflow-hidden group transition-all duration-300">
+              <span class="absolute inset-0 w-0 bg-[#242659] transition-all duration-300 group-hover:w-full"></span>
+              <span class="relative z-10 transition-all duration-300 group-hover:text-white">Learn More →</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Room Card 4 -->
+    <div class="flex justify-center">
+      <div class="bg-white rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 relative group w-full max-w-md shadow-lg">
+        <div class="relative">
+          <img src="images/cebu.webp" alt="Cebu Suite" class="w-full h-56 object-cover">              
+          <div class="absolute w-full h-full top-0 left-0 bg-black opacity-0 z-10 transition-opacity duration-300 group-hover:opacity-40"></div>        
+          <div class="absolute w-full h-full top-0 left-0 flex items-end justify-center opacity-0 z-20 transition-opacity duration-300 group-hover:opacity-100">
+            <p class="text-white text-center text-sm font-medium font-[Roboto_Flex] px-4 pb-4">
+              Be delighted with our 2-bedroom suite good for 4 adults and 2 kids with a floor area of 110 square meters,
+              a pleasant size for your friends and family.
+            </p>
+          </div>
+        </div>
+        <div class="p-4">
+          <div class="flex items-center justify-between">
+            <span class="text-lg font-medium font-serif">CEBU SUITE</span>
+            <button onclick="openModal('CEBU SUITE', 'https://www.youtube.com/embed/cY9SAcqI5e8?si=Qpsw8YgcqDeAoAgY', 'Step into your 5-star dream at this amazing 76 square meter suite, our newest accommodation facility which is fully-equipped with Pororo-themed amenities.', '₱18,170/night', '2 guests, featuring 1 king-size bed, breakfast for two', ['Private Outdoor Jacuzzi', 'Living Room', 'Free Wi-Fi', 'Air Conditioning', 'Outside Seating Area'])" 
+              class="relative mt-4 inline-block px-6 py-2 text-[#242659] border-b border-[#242659] overflow-hidden group transition-all duration-300">
+              <span class="absolute inset-0 w-0 bg-[#242659] transition-all duration-300 group-hover:w-full"></span>
+              <span class="relative z-10 transition-all duration-300 group-hover:text-white">Learn More →</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Room Card 5 -->
+    <div class="flex justify-center">
+      <div class="bg-white rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 relative group w-full max-w-md shadow-lg">
+        <div class="relative">
+          <img src="images/executive.webp" alt="Executive Suite" class="w-full h-56 object-cover">              
+          <div class="absolute w-full h-full top-0 left-0 bg-black opacity-0 z-10 transition-opacity duration-300 group-hover:opacity-40"></div>        
+          <div class="absolute w-full h-full top-0 left-0 flex items-end justify-center opacity-0 z-20 transition-opacity duration-300 group-hover:opacity-100">
+            <p class="text-white text-center text-sm font-medium font-[Roboto_Flex] px-4 pb-4">
+              Time stops in this beautiful 107 square meter Asian-inspired suite with avant-garde furnishing.
+            </p>
+            </p>
+          </div>
+        </div>
+        <div class="p-4">
+          <div class="flex items-center justify-between">
+            <span class="text-lg font-medium font-serif">EXECUTIVE SUITE</span>
+            <button onclick="openModal('EXECUTIVE SUITE', 'https://www.youtube.com/embed/mWwnzVvxatg?si=4qLJiTf4UDNWzXr1', 'Time stops in this beautiful 107 square meter Asian-inspired suite with avant-garde furnishing.', '₱18,170/night', '2 guests, featuring 1 king-size bed, breakfast for two', ['Private Outdoor Jacuzzi', 'Living Room', 'Free Wi-Fi', 'Air Conditioning', 'Outside Seating Area'])" 
+              class="relative mt-4 inline-block px-6 py-2 text-[#242659] border-b border-[#242659] overflow-hidden group transition-all duration-300">
+              <span class="absolute inset-0 w-0 bg-[#242659] transition-all duration-300 group-hover:w-full"></span>
+              <span class="relative z-10 transition-all duration-300 group-hover:text-white">Learn More →</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Room Card 6 -->
+    <div class="flex justify-center">
+      <div class="bg-white rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 relative group w-full max-w-md shadow-lg">
+        <div class="relative">
+          <img src="images/ambassador.webp" alt="Ambassador Suite" class="w-full h-56 object-cover">              
+          <div class="absolute w-full h-full top-0 left-0 bg-black opacity-0 z-10 transition-opacity duration-300 group-hover:opacity-40"></div>        
+          <div class="absolute w-full h-full top-0 left-0 flex items-end justify-center opacity-0 z-20 transition-opacity duration-300 group-hover:opacity-100">
+            <p class="text-white text-center text-sm font-medium font-[Roboto_Flex] px-4 pb-4">
+              This luxurious 107 square meter 1-bedroom suite spells European aristocracy with classically-elegant touch.
+            </p>
+            </p>
+          </div>
+        </div>
+        <div class="p-4">
+          <div class="flex items-center justify-between">
+            <span class="text-lg font-medium font-serif">AMBASSADOR SUITE</span>
+            <button onclick="openModal('AMBASSADOR SUITE', 'https://www.youtube.com/embed/ouCaULKN3bE?si=lSCF-b5y9RRTiA1e', 'This luxurious 107 square meter 1-bedroom suite spells European aristocracy with classically-elegant touch.', '₱18,170/night', '2 guests, featuring 1 king-size bed, breakfast for two', ['Private Outdoor Jacuzzi', 'Living Room', 'Free Wi-Fi', 'Air Conditioning', 'Outside Seating Area'])" 
+              class="relative mt-4 inline-block px-6 py-2 text-[#242659] border-b border-[#242659] overflow-hidden group transition-all duration-300">
+              <span class="absolute inset-0 w-0 bg-[#242659] transition-all duration-300 group-hover:w-full"></span>
+              <span class="relative z-10 transition-all duration-300 group-hover:text-white">Learn More →</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Room Card 7 -->
+    <div class="flex justify-center">
+      <div class="bg-white rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 relative group w-full max-w-md shadow-lg">
+        <div class="relative">
+          <img src="images/royal.webp" alt="Royal Suite" class="w-full h-56 object-cover">              
+          <div class="absolute w-full h-full top-0 left-0 bg-black opacity-0 z-10 transition-opacity duration-300 group-hover:opacity-40"></div>        
+          <div class="absolute w-full h-full top-0 left-0 flex items-end justify-center opacity-0 z-20 transition-opacity duration-300 group-hover:opacity-100">
+            <p class="text-white text-center text-sm font-medium font-[Roboto_Flex] px-4 pb-4">
+              You are the king of this grand 261.8 square meter suite with a Victorian era vibe.
+            </p>
+            </p>
+          </div>
+        </div>
+        <div class="p-4">
+          <div class="flex items-center justify-between">
+            <span class="text-lg font-medium font-serif">ROYAL SUITE</span>
+            <button onclick="openModal('ROYAL SUITE', 'https://www.youtube.com/embed/qtTfJxGhmuk?si=X1AQSxqusJmI9N1G', 'You are the king of this grand 261.8 square meter suite with a Victorian era vibe.', '₱18,170/night', '2 guests, featuring 1 king-size bed, breakfast for two', ['Private Outdoor Jacuzzi', 'Living Room', 'Free Wi-Fi', 'Air Conditioning', 'Outside Seating Area'])" 
+              class="relative mt-4 inline-block px-6 py-2 text-[#242659] border-b border-[#242659] overflow-hidden group transition-all duration-300">
+              <span class="absolute inset-0 w-0 bg-[#242659] transition-all duration-300 group-hover:w-full"></span>
+              <span class="relative z-10 transition-all duration-300 group-hover:text-white">Learn More →</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<section class="text-center py-6 md:py-8 lg:py-10">
+  <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold font-serif text-[#2887bf]">
+    VILLAS
+  </h1>
+  <p class="mt-4 mx-4 sm:mx-5 md:mx-10 lg:mx-15 text-base sm:text-lg font-[Roboto_Flex] text-gray-600 text-justify">
+    Jpark has been Cebu’s premier destination that provides clean and comfortable accommodation with top-notch facilities
+    and amenities, delightful cuisine, and attentive Filipino hospitality at a value conscious price. We always strive
+    for excellent and quality service to guarantee an enjoyable stay with a tremendous amount of satisfaction and
+    memorable experience. Throughout the years, we have set in stone an experience with fun & luxury in one place.
+    All 568 rooms, villas and suites are elegantly furnished and equipped with modern conveniences.
+    Come and join us as we take a look at the most spacious accommodations in the region. 
+  </p>
+</section>
+
+<section class="container mx-auto pt-1 pb-20 ps-4 pe-4 py-16">
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+    <!-- Room Card 1 -->
+    <div class="flex justify-center">
+      <div class="bg-white rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 relative group w-full max-w-md shadow-lg">
+        <div class="relative">
+          <img src="images/jacuzzi-villa.webp" alt="Jacuzzi Villa" class="w-full h-56 object-cover">              
+          <div class="absolute w-full h-full top-0 left-0 bg-black opacity-0 z-10 transition-opacity duration-300 group-hover:opacity-40"></div>        
+          <div class="absolute w-full h-full top-0 left-0 flex items-end justify-center opacity-0 z-20 transition-opacity duration-300 group-hover:opacity-100">
+            <p class="text-white text-center text-sm font-medium font-[Roboto_Flex] px-4 pb-4">
+              Savor in a peaceful stay in this 80.4 square meter villa and make the most out of your 
+              quality time in a luxurious solitude with your loved one in a private Jacuzzi.
+            </p>
+          </div>
+        </div>
+        <div class="p-4">
+          <div class="flex items-center justify-between">
+            <span class="text-lg font-medium font-serif">JACUZZI VILLA</span>
+            <button onclick="openModal('JACUZZI VILLA', 'https://www.youtube.com/embed/etsqopVEvGk?si=_i15NMfcfXJ_9GqY', 'Savor in a peaceful stay in this 80.4 square meter villa and make the most out of your quality time in a luxurious solitude with your loved one in a private Jacuzzi.', '₱18,170/night', '2 guests, featuring 1 king-size bed, breakfast for two', ['Private Outdoor Jacuzzi', 'Living Room', 'Free Wi-Fi', 'Air Conditioning', 'Outside Seating Area'])" 
+              class="relative mt-4 inline-block px-6 py-2 text-[#242659] border-b border-[#242659] overflow-hidden group transition-all duration-300">
+              <span class="absolute inset-0 w-0 bg-[#242659] transition-all duration-300 group-hover:w-full"></span>
+              <span class="relative z-10 transition-all duration-300 group-hover:text-white">Learn More →</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Room Card 2 -->
+    <div class="flex justify-center">
+      <div class="bg-white rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 relative group w-full max-w-md shadow-lg">
+        <div class="relative">
+          <img src="images/family-jacuzzi-villa.webp" alt="Family Jacuzzi Villa" class="w-full h-56 object-cover">              
+          <div class="absolute w-full h-full top-0 left-0 bg-black opacity-0 z-10 transition-opacity duration-300 group-hover:opacity-40"></div>        
+          <div class="absolute w-full h-full top-0 left-0 flex items-end justify-center opacity-0 z-20 transition-opacity duration-300 group-hover:opacity-100">
+            <p class="text-white text-center text-sm font-medium font-[Roboto_Flex] px-4 pb-4">
+              Get hold of an unparalleled staycation with friends and family in this 2-bedroom villa with a floor area of
+              96.7 square meter and your very own Jacuzzi good for 4 adults and 2 kids.
+            </p>
+          </div>
+        </div>
+        <div class="p-4">
+          <div class="flex items-center justify-between">
+            <span class="text-lg font-medium font-serif">FAMILY JACUZZI VILLA</span>
+            <button onclick="openModal('FAMILY JACUZZI VILLA', 'https://www.youtube.com/embed/lw6VAAzakMo?si=qO6vJpu7S1VH_1xp', 'Get hold of an unparalleled staycation with friends and family in this 2-bedroom villa with a floor area of 96.7 square meter and your very own Jacuzzi good for 4 adults and 2 kids.', '₱21,177/night', '6 guests, 3 bedrooms, 2 baths', ['Private Outdoor Jacuzzi', 'Living Room', 'Free Wi-Fi', 'Air Conditioning', 'Outside Seating Area', 'Kitchenette'])" 
+              class="relative mt-4 inline-block px-6 py-2 text-[#242659] border-b border-[#242659] overflow-hidden group transition-all duration-300">
+              <span class="absolute inset-0 w-0 bg-[#242659] transition-all duration-300 group-hover:w-full"></span>
+              <span class="relative z-10 transition-all duration-300 group-hover:text-white">Learn More →</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Room Card 3 -->
+    <div class="flex justify-center">
+      <div class="bg-white rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 relative group w-full max-w-md shadow-lg">
+        <div class="relative">
+          <img src="images/pool-villa.webp" alt="Pool Villa" class="w-full h-56 object-cover">              
+          <div class="absolute w-full h-full top-0 left-0 bg-black opacity-0 z-10 transition-opacity duration-300 group-hover:opacity-40"></div>        
+          <div class="absolute w-full h-full top-0 left-0 flex items-end justify-center opacity-0 z-20 transition-opacity duration-300 group-hover:opacity-100">
+            <p class="text-white text-center text-sm font-medium font-[Roboto_Flex] px-4 pb-4">
+              Enjoy utmost privacy and relaxation in this 80.4 square meter villa with
+              a pool of your own perfect for intimate and exquisite celebrations.
+            </p>
+          </div>
+        </div>
+        <div class="p-4">
+          <div class="flex items-center justify-between">
+            <span class="text-lg font-medium font-serif">POOL VILLA</span>
+            <button onclick="openModal('FAMILY POOL VILLA', 'https://www.youtube.com/embed/U4EKmL6ZQj4?si=dhug-GoOB8aoI79F', 'Enjoy utmost privacy and relaxation in this 80.4 square meter villa with a pool of your own perfect for intimate and exquisite celebrations.', '₱22,942/night', '4 guests, featuring 1 king-size bed', ['Private Outdoor Pool', 'Living Room', 'Free Wi-Fi', 'Air Conditioning', 'Kitchenette', 'Sun Deck'])" 
+              class="relative mt-4 inline-block px-6 py-2 text-[#242659] border-b border-[#242659] overflow-hidden group transition-all duration-300">
+                <span class="absolute inset-0 w-0 bg-[#242659] transition-all duration-300 group-hover:w-full"></span>
+                <span class="relative z-10 transition-all duration-300 group-hover:text-white">Learn More →</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Room Card 4 -->
+    <div class="flex justify-center">
+      <div class="bg-white rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 relative group w-full max-w-md shadow-lg">
+        <div class="relative">
+          <img src="images/family-pool-villa.webp" alt="Family Pool Villa" class="w-full h-56 object-cover">              
+          <div class="absolute w-full h-full top-0 left-0 bg-black opacity-0 z-10 transition-opacity duration-300 group-hover:opacity-40"></div>        
+          <div class="absolute w-full h-full top-0 left-0 flex items-end justify-center opacity-0 z-20 transition-opacity duration-300 group-hover:opacity-100">
+            <p class="text-white text-center text-sm font-medium font-[Roboto_Flex] px-4 pb-4">
+              A five-star getaway with your family feels like home in this 2-bedroom villa with a floor area of
+              96.7 square meter and a private pool good for 4 adults and 2 kids.
+            </p>
+          </div>
+        </div>
+        <div class="p-4">
+          <div class="flex items-center justify-between">
+            <span class="text-lg font-medium font-serif">FAMILY POOL VILLA</span>
+            <button onclick="openModal('FAMILY POOL VILLA', 'https://www.youtube.com/embed/U4EKmL6ZQj4?si=dhug-GoOB8aoI79F', 'A five-star getaway with your family feels like home in this 2-bedroom villa with a floor area of 96.7 square meter and a private pool good for 4 adults and 2 kids.', '₱22,942/night', '6 guests, featuring 1 king-size bed and 2 twin beds', ['Private Outdoor Pool', 'Living Room', 'Free Wi-Fi', 'Air Conditioning', 'Kitchenette', 'Sun Deck'])" 
+              class="relative mt-4 inline-block px-6 py-2 text-[#242659] border-b border-[#242659] overflow-hidden group transition-all duration-300">
+                <span class="absolute inset-0 w-0 bg-[#242659] transition-all duration-300 group-hover:w-full"></span>
+                <span class="relative z-10 transition-all duration-300 group-hover:text-white">Learn More →</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="modal" class="fixed inset-0 z-50 hidden overflow-y-auto">
+    <div class="flex items-center justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0">
+      <div class="fixed inset-0 transition-opacity" aria-hidden="true">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+      </div>
+      <!-- Modal content -->
+      <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-4xl sm:w-full">
+        <div class="bg-white px-4 pt-8 pb-4 sm:p-6 sm:pb-4">
+          <div class="sm:flex sm:items-start">
+
+            <button onclick="closeModal()" class="absolute top-2 right-2 text-gray-500 hover:text-gray-700">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+            </button>
+            <div class="flex flex-col sm:flex-row w-full">
+              <div class="w-full sm:w-1/2 pr-4">
+                <h3 id="modalTitle" class="text-lg font-medium font-serif text-gray-900 mb-4"></h3>
+                <div class="relative aspect-video rounded-lg overflow-hidden">
+                  <iframe id="modalVideo" class="absolute top-0 left-0 w-full h-full" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+              </div>
+
+              <div class="w-full sm:w-1/2 pl-4">
+                <div class="mt-4">
+                  <p id="modalPrice" class="text-lg font-semibold text-gray-900"></p>
+                  <p id="modalCapacity" class="text-sm text-gray-500"></p>
+                </div>
+                <p id="modalDescription" class="text-sm text-gray-500 mt-4"></p>
+                <div class="mt-4">
+                  <h4 class="text-md font-medium text-gray-900">Amenities</h4>
+                  <ul id="modalAmenities" class="list-disc list-inside text-sm text-gray-500 mt-2"></ul>
+                </div>
+                <div class="mt-6">
+                  <button class="w-full bg-[#1f6a9f] text-white py-2 px-4 rounded-md hover:bg-[#242659] transition-all duration-300">
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="bg-[#242659] text-white py-8 sm:py-12">
+  <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+          <!-- Call to Action -->
+          <div class="text-center md:text-left">
+              <h3 class="text-lg sm:text-xl font-bold uppercase tracking-widest mb-2 sm:mb-4 font-[Roboto_Flex]">
+                  Ready for Adventure?
+              </h3>
+              <p class="text-gray-300 text-xs sm:text-sm mb-2 sm:mb-4">
+                  Book your stay now and experience the ultimate luxury and excitement at JPark Island Resort!
+              </p>
+              <a href="#booking" class="inline-block bg-[#2887bf] text-white px-4 sm:px-6 py-1 sm:py-2 rounded-full hover:bg-[#1f6a9f] transition duration-300 text-sm sm:text-base">
+                  Book Now
+              </a>
+          </div>
+
+          <!-- Social Media -->
+          <div class="text-center">
+              <h3 class="text-lg sm:text-xl font-bold uppercase tracking-widest mb-2 sm:mb-4 font-[Roboto_Flex]">
+                  Follow Us
+              </h3>
+              <div class="flex justify-center space-x-4 sm:space-x-6">
+                  <!-- Facebook -->
+                  <a href="https://web.facebook.com/jparkislandresort" class="text-gray-300 hover:text-[#2887bf] transition duration-300">
+                      <i class="fab fa-facebook fa-lg sm:fa-2x"></i>
+                  </a>
+                  <!-- Instagram -->
+                  <a href="https://www.instagram.com/jparkislandresort?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="text-gray-300 hover:text-[#ffff] transition duration-300">
+                      <i class="fab fa-instagram fa-lg sm:fa-2x"></i>
+                  </a>
+                  <!-- TikTok -->
+                  <a href="#" class="text-gray-300 hover:text-[#2887bf] transition duration-300">
+                      <i class="fab fa-tiktok fa-lg sm:fa-2x"></i>
+                  </a>
+                  <!-- YouTube -->
+                  <a href="#" class="text-gray-300 hover:text-[#2887bf] transition duration-300">
+                      <i class="fab fa-youtube fa-lg sm:fa-2x"></i>
+                  </a>
+                  <!-- X (Twitter) -->
+                  <a href="#" class="text-gray-300 hover:text-[#2887bf] transition duration-300">
+                      <i class="fab fa-x-twitter fa-lg sm:fa-2x"></i>
+                  </a>
+              </div>
+          </div>
+
+          <!-- Newsletter -->
+          <div class="text-center md:text-right">
+              <h3 class="text-lg sm:text-xl font-bold uppercase tracking-widest mb-2 sm:mb-4 font-[Roboto_Flex]">
+                  Stay Updated
+              </h3>
+              <p class="text-gray-300 text-xs sm:text-sm mb-2 sm:mb-4">
+                  Subscribe to our newsletter for exclusive offers and updates!
+              </p>
+              <form class="flex justify-center md:justify-end">
+                  <input type="email" placeholder="Your email" class="bg-white text-gray-800 px-3 sm:px-4 py-1 sm:py-2 rounded-l-full focus:outline-none text-xs sm:text-sm">
+                  <button type="submit" class="bg-[#2887bf] text-white px-4 sm:px-6 py-1 sm:py-2 rounded-r-full hover:bg-[#1f6a9f] transition duration-300 text-sm sm:text-base">
+                      Subscribe
+                  </button>
+              </form>
+          </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="border-t border-gray-700 mt-6 sm:mt-8 pt-6 sm:pt-8 text-center text-gray-400 text-xs sm:text-sm">
+          &copy; 2023 JPark Island Resort. All rights reserved.
+      </div>
+  </div>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+        const hamburger = document.querySelector('nav button');
+        const navLinks = document.querySelector('nav ul');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('hidden');
+        });
+    });
+
+  function openModal(title, videoUrl, description, price, capacity, amenities) {
+  const modal = document.getElementById('modal');
+  const modalTitle = document.getElementById('modalTitle');
+  const modalVideo = document.getElementById('modalVideo');
+  const modalDescription = document.getElementById('modalDescription');
+  const modalPrice = document.getElementById('modalPrice');
+  const modalCapacity = document.getElementById('modalCapacity');
+  const modalAmenities = document.getElementById('modalAmenities');
+
+  // Set modal content
+  modalTitle.textContent = title;
+  modalVideo.src = videoUrl; // Set YouTube video URL
+  modalDescription.textContent = description;
+  modalPrice.textContent = price;
+  modalCapacity.textContent = capacity;
+
+  // Clear previous amenities
+  modalAmenities.innerHTML = '';
+  amenities.forEach(amenity => {
+    const li = document.createElement('li');
+    li.textContent = amenity;
+    modalAmenities.appendChild(li);
+  });
+
+  // Show modal
+  modal.classList.remove('hidden');
+}
+
+function closeModal() {
+  const modal = document.getElementById('modal');
+  modal.classList.add('hidden');
+  // Pause the video when modal is closed
+  const modalVideo = document.getElementById('modalVideo');
+  modalVideo.src = ''; // Reset the video source
+}
+</script>
+</body>
+</html>

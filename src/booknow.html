@@ -1,0 +1,394 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <title>JPark Island Resort - Book Now</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body class="font-[Montserrat]">
+    <!-- Hero Section -->
+    <section class="relative h-screen bg-[url('images/book_bg.jpg')] bg-cover bg-center bg-fixed flex items-center justify-start text-white">
+        <div class="absolute inset-0 bg-black/30"></div>
+        <div class="ms-4 sm:ms-10 relative text-left px-4 max-w-2xl">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl tracking-wide font-extrabold font-[Dancing_Script]">
+                Book your way to <span class="text-[#FFB433] tracking-widest font-[Roboto_Flex]">FUN</span> and 
+                <span class="text-[#FF70AB] tracking-widest font-[Roboto_Flex]">ADVENTURE</span>!
+            </h1>
+            <p class="mt-4 sm:mt-6 text-base sm:text-lg md:text-xl font-medium font-[Roboto_Flex]">
+                Experience luxury and excitement at JPark Island Resort. Book your stay now and create unforgettable memories!
+            </p>
+            <!-- Home Button -->
+            <a href="index.html" class="mt-6 sm:mt-8 inline-block bg-white text-black font-bold text-base sm:text-lg px-4 sm:px-6 py-2 sm:py-3 shadow-md hover:bg-[#FFB433] font-[Roboto_Flex] transition">
+                Home
+            </a>
+        </div>
+    </section>
+
+<!-- Booking Form Section -->
+<section id="booking-form" class="py-12 sm:py-16 bg-gray-100 font-[Roboto_Flex]">
+    <div class="container mx-auto px-4">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-[#242659] font-[Dancing_Script]">
+            Plan Your Stay
+        </h2>
+        <p class="mt-2 sm:mt-4 text-center text-gray-600 max-w-2xl mx-auto text-sm sm:text-base">
+            Fill out the form below to check availability and book your dream vacation at JPark Island Resort.
+        </p>
+        <form id="bookingForm" class="mt-6 sm:mt-8 max-w-3xl mx-auto bg-white p-6 sm:p-8 rounded-lg shadow-lg">
+            <!-- Personal Information -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+                <div>
+                    <label for="full-name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                    <input type="text" id="full-name" name="full-name" class="mt-1 block w-full px-3 sm:px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-[#242659] focus:border-[#242659]">
+                    <span id="full-name-error" class="text-red-500 text-sm hidden">Full Name is required.</span>
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                    <input type="email" id="email" name="email" class="mt-1 block w-full px-3 sm:px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-[#242659] focus:border-[#242659]">
+                    <span id="email-error" class="text-red-500 text-sm hidden">Please enter a valid email address.</span>
+                </div>
+                <div>
+                    <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" class="mt-1 block w-full px-3 sm:px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-[#242659] focus:border-[#242659]">
+                    <span id="phone-error" class="text-red-500 text-sm hidden">Please enter a valid phone number.</span>
+                </div>
+                <div>
+                    <label for="room-type" class="block text-sm font-medium text-gray-700">Room Type</label>
+                    <select id="room-type" name="room-type" class="mt-1 block w-full px-3 sm:px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-[#242659] focus:border-[#242659]">
+                        <option value="" disabled selected>Select Room Type</option>
+                        <option value="standard">Deluxe</option>
+                        <option value="deluxe">Mactan Suite</option>
+                        <option value="suite">Pororo Suite</option>
+                        <option value="villa">Cebu Suite</option>
+                        <option value="deluxe">Executive Suite</option>
+                        <option value="suite">Ambassador Suite</option>
+                        <option value="villa">Royal Suite</option>
+                        <option value="suite">Jacuzzi Villa</option>
+                        <option value="villa">Family Jacuzzi Villa</option>
+                        <option value="suite">Pool Villa</option>
+                        <option value="villa">Family Pool Villa</option>
+                    </select>
+                    <span id="room-type-error" class="text-red-500 text-sm hidden">Room Type is required.</span>
+                </div>
+            </div>
+
+            <!-- Booking Details -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mt-4 sm:mt-6">
+                <div>
+                    <label for="check-in" class="block text-sm font-medium text-gray-700">Check-In Date</label>
+                    <input type="date" id="check-in" name="check-in" class="mt-1 block w-full px-3 sm:px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-[#242659] focus:border-[#242659]" >
+                    <span id="check-in-error" class="text-red-500 text-sm hidden">Check-In Date is required.</span>
+                </div>
+                <div>
+                    <label for="check-out" class="block text-sm font-medium text-gray-700">Check-Out Date</label>
+                    <input type="date" id="check-out" name="check-out" class="mt-1 block w-full px-3 sm:px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-[#242659] focus:border-[#242659]">
+                    <span id="check-out-error" class="text-red-500 text-sm hidden">Check-Out Date is required.</span>
+                </div>
+                <div>
+                    <label for="adults" class="block text-sm font-medium text-gray-700">Adults</label>
+                    <div class="flex items-center border border-gray-300 rounded-md shadow-sm">
+                        <button type="button" id="minus-adults" class="px-3 py-2 bg-gray-200 hover:bg-gray-300 rounded-l-md">-</button>
+                        <input type="number" id="adults" name="adults" min="1" value="1" class="w-full text-center border-0 focus:ring-0" readonly required>
+                        <button type="button" id="plus-adults" class="px-3 py-2 bg-gray-200 hover:bg-gray-300 rounded-r-md">+</button>
+                    </div>
+                    <span id="adults-error" class="text-red-500 text-sm hidden">Number of Adults is required.</span>
+                </div>
+                
+                <div>
+                    <label for="children" class="block text-sm font-medium text-gray-700">Children</label>
+                    <div class="flex items-center border border-gray-300 rounded-md shadow-sm">
+                        <button type="button" id="minus-children" class="px-3 py-2 bg-gray-200 hover:bg-gray-300 rounded-l-md">-</button>
+                        <input type="number" id="children" name="children" min="0" value="0" class="w-full text-center border-0 focus:ring-0" readonly>
+                        <button type="button" id="plus-children" class="px-3 py-2 bg-gray-200 hover:bg-gray-300 rounded-r-md">+</button>
+                    </div>
+                </div>                    
+            </div>
+
+            <!-- Special Request -->
+            <div class="mt-4 sm:mt-6">
+                <label for="special-request" class="block text-sm font-medium text-gray-700">Special Request</label>
+                <textarea id="special-request" name="special-request" rows="4" class="mt-1 block w-full px-3 sm:px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-[#242659] focus:border-[#242659]" placeholder="Any special requests?"></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="mt-4 sm:mt-6">
+                <button type="submit" class="w-full bg-[#242659] text-white px-4 sm:px-6 py-2 sm:py-3 rounded-md font-semibold hover:bg-[#FFB433] transition duration-300">
+                    Check Availability
+                </button>
+            </div>
+        </form>
+    </div>
+</section>
+
+<!-- Processing Modal -->
+<div id="processingModal" class="fixed inset-0 z-50 flex items-center justify-center hidden">
+    <div class="bg-white p-6 sm:p-8 rounded-lg shadow-lg max-w-md w-full">
+        <div id="processingMessage" class="text-center">
+            <p class="text-lg font-semibold text-gray-700">Processing your request...</p>
+            <div class="mt-4">
+                <div class="w-12 h-12 border-4 border-[#242659] border-t-transparent rounded-full animate-spin mx-auto"></div>
+            </div>
+        </div>
+        <div id="availabilityMessage" class="text-center hidden">
+            <p class="text-lg font-semibold text-gray-700">Room is available!</p>
+            <button id="bookNowButton" class="mt-4 bg-[#242659] text-white px-6 py-2 rounded-md font-semibold hover:bg-[#FFB433] transition duration-300">
+                Book Now
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-[#242659] text-white py-8 sm:py-12">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+            <!-- Call to Action -->
+            <div class="text-center md:text-left">
+                <h3 class="text-lg sm:text-xl font-bold uppercase tracking-widest mb-2 sm:mb-4 font-[Roboto_Flex]">
+                    Ready for Adventure?
+                </h3>
+                <p class="text-gray-300 text-xs sm:text-sm mb-2 sm:mb-4">
+                    Book your stay now and experience the ultimate luxury and excitement at JPark Island Resort!
+                </p>
+                <a href="#booking" class="inline-block bg-[#2887bf] text-white px-4 sm:px-6 py-1 sm:py-2 rounded-full hover:bg-[#1f6a9f] transition duration-300 text-sm sm:text-base">
+                    Book Now
+                </a>
+            </div>
+
+            <!-- Social Media -->
+            <div class="text-center">
+                <h3 class="text-lg sm:text-xl font-bold uppercase tracking-widest mb-2 sm:mb-4 font-[Roboto_Flex]">
+                    Follow Us
+                </h3>
+                <div class="flex justify-center space-x-4 sm:space-x-6">
+                    <!-- Facebook -->
+                    <a href="https://web.facebook.com/jparkislandresort" class="text-gray-300 hover:text-[#2887bf] transition duration-300">
+                        <i class="fab fa-facebook fa-lg sm:fa-2x"></i>
+                    </a>
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/jparkislandresort?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="text-gray-300 hover:text-[#ffff] transition duration-300">
+                        <i class="fab fa-instagram fa-lg sm:fa-2x"></i>
+                    </a>
+                    <!-- TikTok -->
+                    <a href="#" class="text-gray-300 hover:text-[#2887bf] transition duration-300">
+                        <i class="fab fa-tiktok fa-lg sm:fa-2x"></i>
+                    </a>
+                    <!-- YouTube -->
+                    <a href="#" class="text-gray-300 hover:text-[#2887bf] transition duration-300">
+                        <i class="fab fa-youtube fa-lg sm:fa-2x"></i>
+                    </a>
+                    <!-- X (Twitter) -->
+                    <a href="#" class="text-gray-300 hover:text-[#2887bf] transition duration-300">
+                        <i class="fab fa-x-twitter fa-lg sm:fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="text-center md:text-right">
+                <h3 class="text-lg sm:text-xl font-bold uppercase tracking-widest mb-2 sm:mb-4 font-[Roboto_Flex]">
+                    Stay Updated
+                </h3>
+                <p class="text-gray-300 text-xs sm:text-sm mb-2 sm:mb-4">
+                    Subscribe to our newsletter for exclusive offers and updates!
+                </p>
+                <form class="flex justify-center md:justify-end">
+                    <input type="email" placeholder="Your email" class="bg-white text-gray-800 px-3 sm:px-4 py-1 sm:py-2 rounded-l-full focus:outline-none text-xs sm:text-sm">
+                    <button type="submit" class="bg-[#2887bf] text-white px-4 sm:px-6 py-1 sm:py-2 rounded-r-full hover:bg-[#1f6a9f] transition duration-300 text-sm sm:text-base">
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="border-t border-gray-700 mt-6 sm:mt-8 pt-6 sm:pt-8 text-center text-gray-400 text-xs sm:text-sm">
+            &copy; 2023 JPark Island Resort. All rights reserved.
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Increment/Decrement Buttons for Adults
+    document.getElementById('minus-adults').addEventListener('click', function () {
+        let input = document.getElementById('adults');
+        let currentValue = parseInt(input.value, 10); // Convert value to a number
+        if (currentValue > 1) {
+            input.value = currentValue - 1; // Decrement by 1
+        }
+    });
+
+    document.getElementById('plus-adults').addEventListener('click', function () {
+        let input = document.getElementById('adults');
+        let currentValue = parseInt(input.value, 10); // Convert value to a number
+        input.value = currentValue + 1; // Increment by 1
+    });
+
+    // Increment/Decrement Buttons for Children
+    document.getElementById('minus-children').addEventListener('click', function () {
+        let input = document.getElementById('children');
+        let currentValue = parseInt(input.value, 10); // Convert value to a number
+        if (currentValue > 0) {
+            input.value = currentValue - 1; // Decrement by 1
+        }
+    });
+
+    document.getElementById('plus-children').addEventListener('click', function () {
+        let input = document.getElementById('children');
+        let currentValue = parseInt(input.value, 10); // Convert value to a number
+        input.value = currentValue + 1; // Increment by 1
+    });
+
+    // Form Submission and Validation
+    document.getElementById('bookingForm').addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent form submission
+
+        // Clear previous errors
+        clearErrors();
+
+        // Validate fields
+        const fullName = document.getElementById('full-name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const phone = document.getElementById('phone').value.trim();
+        const roomType = document.getElementById('room-type').value;
+        const checkIn = document.getElementById('check-in').value;
+        const checkOut = document.getElementById('check-out').value;
+        const adults = document.getElementById('adults').value.trim();
+        const children = document.getElementById('children').value.trim();
+
+        let isValid = true;
+
+        if (!fullName) {
+            showError('full-name-error', 'Full Name is required.');
+            isValid = false;
+        }
+
+        if (!email || !validateEmail(email)) {
+            showError('email-error', 'Please enter a valid email address.');
+            isValid = false;
+        }
+
+        if (!phone || !validatePhone(phone)) {
+            showError('phone-error', 'Please enter a valid phone number.');
+            isValid = false;
+        }
+
+        if (!roomType) {
+            showError('room-type-error', 'Room Type is required.');
+            isValid = false;
+        }
+
+        if (!checkIn) {
+            showError('check-in-error', 'Check-In Date is required.');
+            isValid = false;
+        }
+
+        if (!checkOut) {
+            showError('check-out-error', 'Check-Out Date is required.');
+            isValid = false;
+        }
+
+        if (!adults || adults < 1) {
+            showError('adults-error', 'Number of Adults is required.');
+            isValid = false;
+        }
+
+        if (isValid) {
+            // Show processing modal
+            showModal();
+
+            // Simulate availability check (e.g., API call)
+            setTimeout(() => {
+                // Assume room is available
+                document.getElementById('processingMessage').classList.add('hidden');
+                document.getElementById('availabilityMessage').classList.remove('hidden');
+            }, 2000); // Simulate 2 seconds delay
+        }
+    });
+
+    // Book Now Button
+    document.getElementById('bookNowButton').addEventListener('click', function () {
+        // Replace with actual booking logic
+        hideModal();
+    });
+
+    // Ensure the modal appears on top of everything
+    function showModal() {
+        const processingModal = document.getElementById('processingModal');
+        processingModal.classList.remove('hidden');
+        processingModal.classList.add('flex'); // Ensure it uses flexbox
+        document.body.classList.add('overflow-hidden'); // Prevent background scrolling
+    }
+
+    // Hide the modal properly
+    function hideModal() {
+        const processingModal = document.getElementById('processingModal');
+        processingModal.classList.add('hidden');
+        processingModal.classList.remove('flex');
+        document.body.classList.remove('overflow-hidden'); // Re-enable scrolling
+    }
+
+    // Update "Book Now" button to clear form and show a confirmation message
+    const bookNowButton = document.getElementById('bookNowButton');
+    bookNowButton.addEventListener('click', function () {
+        hideModal(); // Close the modal
+        resetForm(); // Clear form fields
+        showConfirmation(); // Display success message
+    });
+
+    // Function to reset the form
+    function resetForm() {
+        document.getElementById('bookingForm').reset();
+    }
+
+    // Function to display a better confirmation message instead of an alert
+    function showConfirmation() {
+        const confirmationDiv = document.createElement('div');
+        confirmationDiv.innerHTML = `
+            <div class='fixed inset-0 z-50 flex items-center justify-center'>
+                <div class='bg-white p-6 sm:p-8 rounded-lg shadow-lg max-w-md w-full text-center'>
+                    <p class='text-lg font-semibold text-gray-700'><i class="fa-solid fa-circle-check"></i> Your booking request has been submitted!</p>
+                    <p class='text-sm text-gray-600 mt-2'>We will send you an email confirmation shortly.</p>
+                    <button id='closeConfirmation' class='mt-4 bg-[#242659] text-white px-6 py-2 rounded-md font-semibold hover:bg-[#FFB433] transition duration-300'>OK</button>
+                </div>
+            </div>
+        `;
+        document.body.appendChild(confirmationDiv);
+        
+        // Close confirmation when clicking OK
+        document.getElementById('closeConfirmation').addEventListener('click', function () {
+            confirmationDiv.remove();
+        });
+    }
+
+    // Helper Functions
+    function showError(id, message) {
+        const errorElement = document.getElementById(id);
+        errorElement.textContent = message;
+        errorElement.classList.remove('hidden');
+    }
+
+    function clearErrors() {
+        const errorElements = document.querySelectorAll('.text-red-500');
+        errorElements.forEach(element => {
+            element.textContent = '';
+            element.classList.add('hidden');
+        });
+    }
+
+    function validateEmail(email) {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+    }
+
+    function validatePhone(phone) {
+        const phoneRegex = /^\d{10,}$/; // Simple regex for 10+ digits
+        return phoneRegex.test(phone);
+    }
+</script>
+</body>
+</html>

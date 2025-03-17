@@ -1,0 +1,382 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <title>JPark Island Resort - Accommodations</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body class="font-[Roboto_Flex]">
+<!-- Navbar -->
+<nav class="bg-white text-[#222] fixed w-full max-w-[98%] rounded-2xl shadow-md font-sans z-10 my-3 mx-auto left-1/2 transform -translate-x-1/2">
+    <div class="container mx-auto flex justify-between items-center px-4 sm:px-8 py-4">
+      <a href="index.html" class="flex items-center h-16">
+        <img src="images/logo_blue.webp" alt="JPark Island Resort Logo" class="h-auto max-h-12">
+      </a>
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="index.html" class="text-lg font-medium hover:text-[#2887bf] transition duration-300">Home</a></li>
+        <li><a href="accomodation.html" class="text-lg font-medium hover:text-[#2887bf] transition duration-300">Accomodation</a></li>
+        <li><a href="adventures.html" class="text-lg font-medium hover:text-[#2887bf] transition duration-300">Adventures</a></li>
+        <li><a href="contact.html" class="text-lg font-medium hover:text-[#2887bf] transition duration-300">Contact Us</a></li>
+      </ul>
+      <a href="booknow.html" class="relative border border-[#242659] text-[#242659] px-4 py-2 rounded-full transition duration-300 overflow-hidden before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-0 before:w-0 before:rounded-full before:bg-[#242659] before:duration-300 before:ease-out hover:text-white hover:before:h-40 hover:before:w-40 hover:before:opacity-80">
+        <span class="relative z-10">Book Now</span>
+      </a>
+      
+      <button class="md:hidden text-[#242659] focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+    </div>
+</nav>
+
+
+<!-- Hero Section -->
+<section class="relative h-screen bg-[url('images/adventure_bg.webp')] bg-cover bg-center flex items-center justify-center text-white">
+    <div class="relative text-center px-4">
+      <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl tracking-wide font-extrabold font-[Dancing_Script]">
+        Adventures
+      </h1>
+      <h3 class="text-lg sm:text-xl md:text-2xl lg:text-3xl tracking-wide font-medium font-[Roboto_Flex] text-white">
+        Experience Thrills and Excitement at the Philippines' Premier Adventure Waterpark!
+      </h3>
+    </div>
+</section>
+
+<section class="p-6 md:p-12 lg:p-25 bg-[#f5f5f5]">
+    <h1 class="text-3xl md:text-4xl text-[#2887bf] text-center mb-8 tracking-widest font-bold uppercase font-[Roboto_Flex]">
+        Explore Jpark Island Resort</h1>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="grid gap-4">
+            <div class="overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 relative group">
+                <img class="h-auto max-w-full rounded-lg transform hover:scale-105 transition-transform duration-300" src="images/gallery_1.webp" alt="">
+                <div class="absolute bottom-0 left-0 right-0 bg-[#242659]/50 text-white p-2 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    Wave Pool, Water Park
+                </div>
+            </div>
+            <div class="overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 relative group">
+                <img class="h-auto max-w-full rounded-lg transform hover:scale-105 transition-transform duration-300" src="images/gallery_2.webp" alt="">
+                <div class="absolute bottom-0 left-0 right-0 bg-[#242659]/50 text-white p-2 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    Crystal Kayak, Water Sports
+                </div>
+            </div>
+            <div class="overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 relative group">
+                <img class="h-auto max-w-full rounded-lg transform hover:scale-105 transition-transform duration-300" src="images/gallery_3.webp" alt="">
+                <div class="absolute bottom-0 left-0 right-0 bg-[#242659]/50 text-white p-2 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    Toddler's Pool, Water Park
+                </div>
+            </div>
+        </div>
+        <div class="grid gap-4">
+            <div class="overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 relative group">
+                <img class="h-auto max-w-full rounded-lg transform hover:scale-105 transition-transform duration-300" src="images/gallery_4.webp" alt="">
+                <div class="absolute bottom-0 left-0 right-0 bg-[#242659]/50 text-white p-2 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    New Beach, Water Park
+                </div>
+            </div>
+            <div class="overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 relative group">
+                <img class="h-auto max-w-full rounded-lg transform hover:scale-105 transition-transform duration-300" src="images/gallery_5.webp" alt="">
+                <div class="absolute bottom-0 left-0 right-0 bg-[#242659]/50 text-white p-2 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    Go Kart Bike
+                </div>
+            </div>
+            <div class="overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 relative group">
+                <img class="h-auto max-w-full rounded-lg transform hover:scale-105 transition-transform duration-300" src="images/gallery_6.webp" alt="">
+                <div class="absolute bottom-0 left-0 right-0 bg-[#242659]/50 text-white p-2 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    Jetski, Water Sports
+                </div>
+            </div>
+        </div>
+        <div class="grid gap-4">
+            <div class="overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 relative group">
+                <img class="h-auto max-w-full rounded-lg transform hover:scale-105 transition-transform duration-300" src="images/gallery_7.jpg" alt="">
+                <div class="absolute bottom-0 left-0 right-0 bg-[#242659]/50 text-white p-2 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    Fiery Fire Dance Performance
+                </div>
+            </div>
+            <div class="overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 relative group">
+                <img class="h-auto max-w-full rounded-lg transform hover:scale-105 transition-transform duration-300" src="images/gallery_8.jpg" alt="">
+                <div class="absolute bottom-0 left-0 right-0 bg-[#242659]/50 text-white p-2 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    Harry's Soft Foam Zone, Pororo Park
+                </div>
+            </div>
+            <div class="overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 relative group">
+                <img class="h-auto max-w-full rounded-lg transform hover:scale-105 transition-transform duration-300" src="images/gallery_9.png" alt="">
+                <div class="absolute bottom-0 left-0 right-0 bg-[#242659]/50 text-white p-2 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    D Throne, Exclusive Ride
+                </div>
+            </div>
+        </div>
+        <div class="grid gap-4">
+            <div class="overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 relative group">
+                <img class="h-auto max-w-full rounded-lg transform hover:scale-105 transition-transform duration-300" src="images/gallery_10.jpg" alt="">
+                <div class="absolute bottom-0 left-0 right-0 bg-[#242659]/50 text-white p-2 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    Petty's Merry-Go-Round, Pororo Park
+                </div>
+            </div>
+            <div class="overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 relative group">
+                <img class="h-auto max-w-full rounded-lg transform hover:scale-105 transition-transform duration-300" src="images/gallery_11.jpg" alt="">
+                <div class="absolute bottom-0 left-0 right-0 bg-[#242659]/50 text-white p-2 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    Island Pool, Water Park
+                </div>
+            </div>
+            <div class="overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 relative group">
+                <img class="h-auto max-w-full rounded-lg transform hover:scale-105 transition-transform duration-300" src="images/gallery_12.jpg" alt="">
+                <div class="absolute bottom-0 left-0 right-0 bg-[#242659]/50 text-white p-2 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    Mini Golf
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="bg-white flex items-center justify-center h-screen">
+    <div class="relative w-full max-w-6xl mx-auto overflow-hidden px-4">
+        <!-- Carousel Track -->
+        <div class="carousel-track flex transition-transform duration-500">
+    
+            <!-- Carousel Cards -->
+            <div class="carousel-card w-full sm:w-1/2 md:w-1/3 flex-shrink-0 p-2 sm:p-4 transition-transform scale-90 blur-sm max-md:blur-none">
+                <div class="bg-white p-4 sm:p-6 rounded-lg shadow-lg relative">
+                    <img class="carousel-image w-full h-32 sm:h-48 object-cover rounded-t-lg transition-opacity duration-500" src="images/bar1.webp" alt="Bar">
+                    <h2 class="carousel-title text-xl sm:text-2xl font-bold mt-2 sm:mt-4 text-[#242659] font-[Dancing_Script]">Pirate Bar</h2>
+                    <p class="carousel-desc text-sm sm:text-base text-gray-600 mt-1 sm:mt-2">
+                        Chill at Aqus Beach Bar—sip on refreshing drinks and enjoy delicious bites with stunning beachfront views!
+                    </p>
+                </div>
+            </div>
+
+            <div class="carousel-card w-full sm:w-1/2 md:w-1/3 flex-shrink-0 p-2 sm:p-4 transition-transform scale-90 blur-sm max-md:blur-none">
+                <div class="bg-white p-4 sm:p-6 rounded-lg shadow-lg relative">
+                    <img class="carousel-image w-full h-32 sm:h-48 object-cover rounded-t-lg transition-opacity duration-500" src="images/resto1.webp" alt="Restaurant">
+                    <h2 class="carousel-title text-xl sm:text-2xl font-bold mt-2 sm:mt-4 text-[#242659] font-[Dancing_Script]">Maru Restaurant</h2>
+                    <p class="carousel-desc text-sm sm:text-base text-gray-600 mt-1 sm:mt-2">
+                        Savor authentic Korean flavors at Maru—à la carte, teppanyaki, tabletop grill, and hot pot for a vibrant dining experience!
+                    </p>
+                </div>
+            </div>
+    
+            <div class="carousel-card w-full sm:w-1/2 md:w-1/3 flex-shrink-0 p-2 sm:p-4 transition-transform scale-90 blur-sm max-md:blur-none">
+                <div class="bg-white p-4 sm:p-6 rounded-lg shadow-lg relative">
+                    <img class="carousel-image w-full h-32 sm:h-48 object-cover rounded-t-lg transition-opacity duration-500" src="images/spa1.webp" alt="Spa">
+                    <h2 class="carousel-title text-xl sm:text-2xl font-bold mt-2 sm:mt-4 text-[#242659] font-[Dancing_Script]">The Cara Spa</h2>
+                    <p class="carousel-desc text-sm sm:text-base text-gray-600 mt-1 sm:mt-2">
+                        Rejuvenate at Cara Spa—indulge in soothing treatments and ultimate relaxation in a serene resort oasis.
+                    </p>
+                </div>
+            </div>
+
+            <div class="carousel-card w-full sm:w-1/2 md:w-1/3 flex-shrink-0 p-2 sm:p-4 transition-transform scale-90 blur-sm max-md:blur-none">
+                <div class="bg-white p-4 sm:p-6 rounded-lg shadow-lg relative">
+                    <img class="carousel-image w-full h-32 sm:h-48 object-cover rounded-t-lg transition-opacity duration-500" src="images/cafe1.webp" alt="Cafe">
+                    <h2 class="carousel-title text-xl sm:text-2xl font-bold mt-2 sm:mt-4 text-[#242659] font-[Dancing_Script]">Snow Cafe</h2>
+                    <p class="carousel-desc text-sm sm:text-base text-gray-600 mt-1 sm:mt-2">
+                        Cool off at Snow Café—enjoy refreshing bingsu, savory bites, and sweet treats in a cozy Korean dessert spot.
+                    </p>
+                </div>
+            </div>
+
+            <div class="carousel-card w-full sm:w-1/2 md:w-1/3 flex-shrink-0 p-2 sm:p-4 transition-transform scale-90 blur-sm max-md:blur-none">
+                <div class="bg-white p-4 sm:p-6 rounded-lg shadow-lg relative">
+                    <img class="carousel-image w-full h-32 sm:h-48 object-cover rounded-t-lg transition-opacity duration-500" src="images/shop1.webp" alt="Shop">
+                    <h2 class="carousel-title text-xl sm:text-2xl font-bold mt-2 sm:mt-4 text-[#242659] font-[Dancing_Script]">Novelty Shop</h2>
+                    <p class="carousel-desc text-sm sm:text-base text-gray-600 mt-1 sm:mt-2">
+                        Discover elegance at Novelty Shop—shop stunning pearl jewelry, chic fashion, and beach essentials for a stylish getaway.
+                    </p>
+                </div>
+            </div>
+
+            <div class="carousel-card w-full sm:w-1/2 md:w-1/3 flex-shrink-0 p-2 sm:p-4 transition-transform scale-90 blur-sm max-md:blur-none">
+                <div class="bg-white p-4 sm:p-6 rounded-lg shadow-lg relative">
+                    <img class="carousel-image w-full h-32 sm:h-48 object-cover rounded-t-lg transition-opacity duration-500" src="images/camp1.webp" alt="Camp">
+                    <h2 class="carousel-title text-xl sm:text-2xl font-bold mt-2 sm:mt-4 text-[#242659] font-[Dancing_Script]">Joy Camp</h2>
+                    <p class="carousel-desc text-sm sm:text-base text-gray-600 mt-1 sm:mt-2">
+                        Adventure awaits at Joy Camp—fun activities, creative workshops, and exciting games for young explorers!
+                    </p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Navigation Buttons -->
+        <button class="carousel-prev absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full">❮</button>
+        <button class="carousel-next absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full">❯</button>
+    </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="bg-[#242659] text-white py-8 sm:py-12">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+            <!-- Call to Action -->
+            <div class="text-center md:text-left">
+                <h3 class="text-lg sm:text-xl font-bold uppercase tracking-widest mb-2 sm:mb-4 font-[Roboto_Flex]">
+                    Ready for Adventure?
+                </h3>
+                <p class="text-gray-300 text-xs sm:text-sm mb-2 sm:mb-4">
+                    Book your stay now and experience the ultimate luxury and excitement at JPark Island Resort!
+                </p>
+                <a href="#booking" class="inline-block bg-[#2887bf] text-white px-4 sm:px-6 py-1 sm:py-2 rounded-full hover:bg-[#1f6a9f] transition duration-300 text-sm sm:text-base">
+                    Book Now
+                </a>
+            </div>
+
+            <!-- Social Media -->
+            <div class="text-center">
+                <h3 class="text-lg sm:text-xl font-bold uppercase tracking-widest mb-2 sm:mb-4 font-[Roboto_Flex]">
+                    Follow Us
+                </h3>
+                <div class="flex justify-center space-x-4 sm:space-x-6">
+                    <!-- Facebook -->
+                    <a href="https://web.facebook.com/jparkislandresort" class="text-gray-300 hover:text-[#2887bf] transition duration-300">
+                        <i class="fab fa-facebook fa-lg sm:fa-2x"></i>
+                    </a>
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/jparkislandresort?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="text-gray-300 hover:text-[#ffff] transition duration-300">
+                        <i class="fab fa-instagram fa-lg sm:fa-2x"></i>
+                    </a>
+                    <!-- TikTok -->
+                    <a href="#" class="text-gray-300 hover:text-[#2887bf] transition duration-300">
+                        <i class="fab fa-tiktok fa-lg sm:fa-2x"></i>
+                    </a>
+                    <!-- YouTube -->
+                    <a href="#" class="text-gray-300 hover:text-[#2887bf] transition duration-300">
+                        <i class="fab fa-youtube fa-lg sm:fa-2x"></i>
+                    </a>
+                    <!-- X (Twitter) -->
+                    <a href="#" class="text-gray-300 hover:text-[#2887bf] transition duration-300">
+                        <i class="fab fa-x-twitter fa-lg sm:fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="text-center md:text-right">
+                <h3 class="text-lg sm:text-xl font-bold uppercase tracking-widest mb-2 sm:mb-4 font-[Roboto_Flex]">
+                    Stay Updated
+                </h3>
+                <p class="text-gray-300 text-xs sm:text-sm mb-2 sm:mb-4">
+                    Subscribe to our newsletter for exclusive offers and updates!
+                </p>
+                <form class="flex justify-center md:justify-end">
+                    <input type="email" placeholder="Your email" class="bg-white text-gray-800 px-3 sm:px-4 py-1 sm:py-2 rounded-l-full focus:outline-none text-xs sm:text-sm">
+                    <button type="submit" class="bg-[#2887bf] text-white px-4 sm:px-6 py-1 sm:py-2 rounded-r-full hover:bg-[#1f6a9f] transition duration-300 text-sm sm:text-base">
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="border-t border-gray-700 mt-6 sm:mt-8 pt-6 sm:pt-8 text-center text-gray-400 text-xs sm:text-sm">
+            &copy; 2023 JPark Island Resort. All rights reserved.
+        </div>
+    </div>
+</footer>
+
+<script>
+    const track = document.querySelector('.carousel-track');
+    const cards = document.querySelectorAll('.carousel-card');
+    const prevButton = document.querySelector('.carousel-prev');
+    const nextButton = document.querySelector('.carousel-next');
+
+    let currentIndex = 1; // Start with the center card
+    const updateCarousel = () => {
+        const cardWidth = cards[0].offsetWidth;
+        const offset = -(currentIndex - 1) * cardWidth;
+        track.style.transform = `translateX(${offset}px)`;
+
+        // Apply blur and scale effects
+        cards.forEach((card, index) => {
+            if (index === currentIndex) {
+                card.classList.remove('blur-sm', 'scale-90');
+                card.classList.add('scale-110');
+            } else {
+                card.classList.add('blur-sm', 'scale-90');
+                card.classList.remove('scale-110');
+            }
+        });
+    };
+
+    prevButton.addEventListener('click', () => {
+        if (currentIndex > 0) {
+            currentIndex--;
+            updateCarousel();
+        }
+    });
+
+    nextButton.addEventListener('click', () => {
+        if (currentIndex < cards.length - 1) {
+            currentIndex++;
+            updateCarousel();
+        }
+    });
+
+    updateCarousel(); // Initialize
+
+    // Image and Description Carousel Per Card
+    const imageData = [
+        [
+            { src: "images/bar1.webp", title: "Pirate Bar", desc: "Chill at Aqus Beach Bar—sip on refreshing drinks and enjoy delicious bites with stunning beachfront views!" },
+            { src: "images/bar2.webp", title: "Aqus Pool Bar", desc: "Set sail for fun at Pirate Bar—enjoy hearty bites and signature drinks in a lively, adventure-themed setting by the sea!" },
+            { src: "images/bar3.webp", title: "Aqus Beach Bar", desc: "Relax at Aqus Pool Bar—savor tasty snacks and signature drinks while lounging poolside or enjoying a refreshing swim!" }
+        ],
+        [
+            { src: "images/resto1.webp", title: "Maru Restaurant", desc: "Savor authentic Korean flavors at Maru—à la carte, teppanyaki, tabletop grill, and hot pot for a vibrant dining experience!" },
+            { src: "images/resto2.webp", title: "Havana By The Sea", desc: "Experience Caribbean vibes at Havana by the Sea—savor tapas, refreshing drinks, and ocean views for a perfect resort dining escape!" },
+            { src: "images/resto3.webp", title: "JLounge", desc: "Unwind at JLounge—enjoy light meals, cakes, and refreshing drinks in a cozy lobby setting perfect for a relaxing resort escape!" }
+        ],
+        [
+            { src: "images/spa1.webp", title: "The Cara Spa", desc: "Rejuvenate at Cara Spa—indulge in soothing treatments and ultimate relaxation in a serene resort oasis." },
+            { src: "images/spa2.webp", title: "The Cara Spa", desc: "Escape to tranquility at Cara Spa—experience luxurious massages and wellness rituals for pure relaxation." },
+            { src: "images/spa3.webp", title: "The Cara Spa", desc: "Refresh your mind and body at Cara Spa—unwind with rejuvenating therapies in a peaceful retreat." }
+        ],
+        [
+            { src: "images/cafe1.webp", title: "Snow Cafe", desc: "Cool off at Snow Café—enjoy refreshing bingsu, savory bites, and sweet treats in a cozy Korean dessert spot." },
+            { src: "images/cafe2.webp", title: "Snow Cafe", desc: "Indulge in bingsu bliss at Snow Café—savor mango, choco, and more, plus tasty snacks for a perfect treat." },
+            { src: "images/cafe3.webp", title: "Snow Cafe", desc: "Sweet meets savory at Snow Café—delight in Korean desserts, mini gimbap, and bulgogi burgers for a tasty escape." }
+        ],
+        [
+            { src: "images/shop1.webp", title: "Novelty Shop", desc: "Discover elegance at Novelty Shop—shop stunning pearl jewelry, chic fashion, and beach essentials for a stylish getaway." },
+            { src: "images/shop2.webp", title: "Novelty Shop", desc: "Shop in style at Novelty Shop—luxurious pearls, trendy fashion, and beach must-haves for your perfect resort escape." },
+            { src: "images/shop3.webp", title: "Novelty Shop", desc: "Timeless beauty awaits at Novelty Shop—find exquisite accessories, elegant jewelry, and resort-ready essentials." }
+        ],
+        [
+            { src: "images/camp1.webp", title: "Joy Camp", desc: "Adventure awaits at Joy Camp—fun activities, creative workshops, and exciting games for young explorers!" },
+            { src: "images/camp2.webp", title: "Joy Camp", desc: "Joy Camp—where kids cook, create, and play, making every moment at the resort fun and memorable!" },
+            { src: "images/camp3.webp", title: "Joy Camp", desc: "Spark creativity and adventure at Joy Camp—engaging activities for kids to learn, play, and make new friends!" }
+        ]
+    ];
+
+    const cycleImages = () => {
+        cards.forEach((card, cardIndex) => {
+            const img = card.querySelector('.carousel-image');
+            const title = card.querySelector('.carousel-title');
+            const desc = card.querySelector('.carousel-desc');
+
+            let imgIndex = 0;
+            setInterval(() => {
+                imgIndex = (imgIndex + 1) % imageData[cardIndex].length;
+                img.classList.add("opacity-0");
+                setTimeout(() => {
+                    img.src = imageData[cardIndex][imgIndex].src;
+                    title.textContent = imageData[cardIndex][imgIndex].title;
+                    desc.textContent = imageData[cardIndex][imgIndex].desc;
+                    img.classList.remove("opacity-0");
+                }, 500);
+            }, 4000);
+        });
+    };
+
+    cycleImages();
+</script>
+
+
+</body>
+</html>
