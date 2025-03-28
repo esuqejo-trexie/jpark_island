@@ -11,7 +11,6 @@
   <link href="./output.css" rel="stylesheet">
 </head>
 <body class="font-[Roboto_Flex] ">
-<!-- Navbar -->
 <nav class="bg-white text-[#222] fixed w-full max-w-[98%] rounded-2xl shadow-md font-sans z-10 my-3 mx-auto left-1/2 transform -translate-x-1/2">
     <div class="container mx-auto flex justify-between items-center px-4 sm:px-8 py-4">
         <a href="index.html" class="flex items-center h-16">
@@ -38,7 +37,6 @@
 </nav>
 
 
-<!-- Hero Section -->
 <section class="relative h-screen bg-[url('images/contact_bg.webp')] bg-cover bg-center flex items-center justify-center text-white">
     <div class="absolute inset-0 bg-[#69391a]/30"></div>
     <div class="relative text-center px-4">
@@ -51,7 +49,6 @@
     </div>
 </section>
 
-<!-- Contact Information and Form Section -->
 <section class="py-10 bg-[#f5f5f5]">
     <div class="container mx-auto px-4">
         <h2 class="text-3xl md:text-4xl text-[#2887bf] text-center mb-8 tracking-widest font-bold uppercase font-[Roboto_Flex]">
@@ -62,9 +59,7 @@
         </p>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <!-- Left Column -->
             <div>
-                <!-- Top: Two sub-columns -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                     <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
                         <h3 class="text-xl font-bold text-[#242659] mb-4">Phone</h3>
@@ -75,7 +70,6 @@
                         <p class="text-gray-700"><i class="fas fa-envelope text-[#2887bf] mr-2"></i> rsvn@jparkislandresort.com</p>
                     </div>
                 </div>
-                <!-- Bottom: Full Width Contact Form -->
                 <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
                     <h3 class="text-2xl font-bold text-[#242659] mb-6">Send Us a Message</h3>
                     <form>
@@ -98,7 +92,6 @@
                 </div>
             </div>
 
-            <!-- Right Column: Google Map -->
             <div class="h-full">
                 <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 h-full flex flex-col">
                     <h3 class="text-2xl font-bold text-[#242659] mb-6">Our Location</h3>
@@ -118,7 +111,7 @@
     </div>
 </section>
 
-<!-- Floating Weather Button with Tooltip -->
+<!-- Floating Weather Button-->
 <div class="fixed bottom-5 right-5 group">
     <button id="openModal" class="bg-yellow-300 text-white p-3 sm:p-4 rounded-full shadow-lg hover:bg-yellow-500 transition-all duration-300 transform hover:scale-110 hover:rotate-12">
         <i class="fas fa-cloud-sun text-xl sm:text-2xl"></i> 
@@ -142,72 +135,62 @@
 </div>
 
 
-<!-- Footer -->
-<footer class="bg-[#242659] text-white py-12">
+<footer class="bg-[#242659] text-white py-8 sm:py-12">
     <div class="container mx-auto px-4">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Call to Action -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
             <div class="text-center md:text-left">
-                <h3 class="text-xl font-bold uppercase tracking-widest mb-4 font-[Roboto_Flex]">
+                <h3 class="text-lg sm:text-xl font-bold uppercase tracking-widest mb-2 sm:mb-4 font-[Roboto_Flex]">
                     Ready for Adventure?
                 </h3>
-                <p class="text-gray-300 text-sm mb-4">
+                <p class="text-gray-300 text-xs sm:text-sm mb-2 sm:mb-4">
                     Book your stay now and experience the ultimate luxury and excitement at JPark Island Resort!
                 </p>
-                <a href="#booking" class="inline-block bg-[#2887bf] text-white px-6 py-2 rounded-full hover:bg-[#1f6a9f] transition duration-300 ease-in-out">
+                <a href="#booking" class="inline-block bg-[#2887bf] text-white px-4 sm:px-6 py-1 sm:py-2 rounded-full hover:bg-[#1f6a9f] transition duration-300 text-sm sm:text-base">
                     Book Now
                 </a>
             </div>
-
-            <!-- Social Media -->
+  
             <div class="text-center">
-                <h3 class="text-xl font-bold uppercase tracking-widest mb-4 font-[Roboto_Flex]">
+                <h3 class="text-lg sm:text-xl font-bold uppercase tracking-widest mb-2 sm:mb-4 font-[Roboto_Flex]">
                     Follow Us
                 </h3>
-                <div class="flex justify-center space-x-6">
-                    <!-- Facebook -->
-                    <a href="https://web.facebook.com/jparkislandresort" class="text-gray-300 hover:text-[#2887bf] transition duration-300 ease-in-out">
-                        <i class="fab fa-facebook fa-2x"></i>
+                <div class="flex justify-center space-x-4 sm:space-x-6">
+                    <a href="https://web.facebook.com/jparkislandresort" class="text-gray-300 hover:text-[#2887bf] transition duration-300">
+                        <i class="fab fa-facebook fa-lg sm:fa-2x"></i>
                     </a>
-                    <!-- Instagram -->
-                    <a href="https://www.instagram.com/jparkislandresort?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="text-gray-300 hover:text-[#ffff] transition duration-300 ease-in-out">
-                        <i class="fab fa-instagram fa-2x"></i>
+                    <a href="https://www.instagram.com/jparkislandresort?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="text-gray-300 hover:text-[#ffff] transition duration-300">
+                        <i class="fab fa-instagram fa-lg sm:fa-2x"></i>
                     </a>
-                    <!-- TikTok -->
-                    <a href="#" class="text-gray-300 hover:text-[#2887bf] transition duration-300 ease-in-out">
-                        <i class="fab fa-tiktok fa-2x"></i>
+                    <a href="https://web.facebook.com/jparkislandresort" class="text-gray-300 hover:text-[#2887bf] transition duration-300">
+                        <i class="fab fa-tiktok fa-lg sm:fa-2x"></i>
                     </a>
-                    <!-- YouTube -->
-                    <a href="#" class="text-gray-300 hover:text-[#2887bf] transition duration-300 ease-in-out">
-                        <i class="fab fa-youtube fa-2x"></i>
+                    <a href="https://web.facebook.com/jparkislandresort" class="text-gray-300 hover:text-[#2887bf] transition duration-300">
+                        <i class="fab fa-youtube fa-lg sm:fa-2x"></i>
                     </a>
-                    <!-- X (Twitter) -->
-                    <a href="#" class="text-gray-300 hover:text-[#2887bf] transition duration-300 ease-in-out">
-                        <i class="fab fa-x-twitter fa-2x"></i>
+                    <a href="https://web.facebook.com/jparkislandresort" class="text-gray-300 hover:text-[#2887bf] transition duration-300">
+                        <i class="fab fa-x-twitter fa-lg sm:fa-2x"></i>
                     </a>
                 </div>
             </div>
-
-            <!-- Newsletter -->
+  
             <div class="text-center md:text-right">
-                <h3 class="text-xl font-bold uppercase tracking-widest mb-4 font-[Roboto_Flex]">
+                <h3 class="text-lg sm:text-xl font-bold uppercase tracking-widest mb-2 sm:mb-4 font-[Roboto_Flex]">
                     Stay Updated
                 </h3>
-                <p class="text-gray-300 text-sm mb-4">
+                <p class="text-gray-300 text-xs sm:text-sm mb-2 sm:mb-4">
                     Subscribe to our newsletter for exclusive offers and updates!
                 </p>
                 <form class="flex justify-center md:justify-end">
-                    <input type="email" placeholder="Your email" class="bg-white text-gray-800 px-4 py-2 rounded-l-full focus:outline-none focus:ring-2 focus:ring-[#2887bf] focus:border-transparent transition duration-300">
-                    <button type="submit" class="bg-[#2887bf] text-white px-6 py-2 rounded-r-full hover:bg-[#1f6a9f] transition duration-300 ease-in-out">
+                    <input type="email" placeholder="Your email" class="bg-white text-gray-800 px-3 sm:px-4 py-1 sm:py-2 rounded-l-full focus:outline-none text-xs sm:text-sm">
+                    <button type="submit" class="bg-[#2887bf] text-white px-4 sm:px-6 py-1 sm:py-2 rounded-r-full hover:bg-[#1f6a9f] transition duration-300 text-sm sm:text-base">
                         Subscribe
                     </button>
                 </form>
             </div>
         </div>
-
-        <!-- Copyright -->
-        <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400 text-sm">
-            &copy; 2023 JPark Island Resort. All rights reserved.
+  
+        <div class="border-t border-gray-700 mt-6 sm:mt-8 pt-6 sm:pt-8 text-center text-gray-400 text-xs sm:text-sm">
+            &copy; 2025 JPark Island Resort. Esquejo Trexie E. All rights reserved.
         </div>
     </div>
 </footer>
@@ -222,7 +205,7 @@
         });
     });
 
-    const apiKey = "87583adbc66440f48db10422251403"; 
+    const apiKey = "f7a7443e3b23430ba9c151159251703"; 
     const city = "Cebu";
     const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=no`;
 
@@ -242,10 +225,9 @@
         }
     }
 
-    // Modal Controls
     document.getElementById("openModal").addEventListener("click", () => {
         document.getElementById("weatherModal").classList.remove("hidden");
-        fetchWeather(); // Fetch data when modal opens
+        fetchWeather(); 
     });
 
     document.getElementById("closeModal").addEventListener("click", () => {

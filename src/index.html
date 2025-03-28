@@ -13,7 +13,6 @@
 </head>
 
 <body class="bg-[#f5f5f5] font-[Roboto_Flex]">
-<!-- Navbar -->
 <nav class="bg-white text-[#222] fixed w-full max-w-[98%] rounded-2xl shadow-md font-sans z-10 my-3 mx-auto left-1/2 transform -translate-x-1/2">
     <div class="container mx-auto flex justify-between items-center px-4 sm:px-8 py-4">
         <a href="index.html" class="flex items-center h-16">
@@ -39,11 +38,9 @@
     </div>
 </nav>
 
-<!-- Hero Section -->
 <section class="relative h-screen bg-[url('images/bg.webp')] bg-cover bg-center flex items-center justify-center text-white">
     <div class="absolute inset-0 bg-[#242659]/35"></div>
 
-    <!-- Hero Content -->
     <div class="relative text-center px-4">
         <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-wide font-extrabold">
             Welcome to JPark Island Resort —<br> Where Paradise Meets Adventure!
@@ -54,26 +51,25 @@
     </div>
 </section>
 
-<!-- About Section -->
-<section class="py-20 bg-[#f5f5f5] ">
+<section class="py-12 md:py-20 bg-[#f5f5f5]">
     <div class="container mx-auto px-4">
-        <div class="flex flex-col md:flex-row gap-10 items-center">
-            <div class="flex-1">
-                <iframe class="w-full h-64 md:h-80 lg:h-96 rounded-lg shadow-lg" 
+        <div class="flex flex-col md:flex-row gap-6 md:gap-10 items-center">
+            <div class="flex-1 w-full">
+                <iframe class="w-full h-48 sm:h-64 md:h-80 lg:h-96 rounded-lg shadow-lg" 
                     src="https://www.youtube.com/embed/XxKbatwIgHE?si=ZgvlLzXLKck01UAV"
                     allowfullscreen>
                 </iframe>
             </div>
-            <div class="flex-1">
-                <h2 class="text-3xl md:text-4xl text-[#2887bf] text-center mb-5 tracking-wide font-bold font-[Dancing_Script]">
+            <div class="flex-1 w-full">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl text-[#2887bf] text-center mb-5 tracking-wide font-bold font-[Dancing_Script]">
                     Tropical Paradise, Adventure Awaits
                 </h2>
-                <p class="text-gray-800 leading-relaxed text-md text-justify">
+                <p class="text-gray-800 leading-relaxed text-sm sm:text-md text-justify">
                     Discover a slice of paradise at <span class="font-semibold">JPark Island Resort & Waterpark</span>, 
                     the ultimate luxury getaway in Cebu, Philippines. Immerse yourself in breathtaking ocean views, 
                     world-class hospitality, and an unforgettable blend of relaxation and adventure.
                 </p>
-                <p class="mt-6 text-gray-800 leading-relaxed text-md text-justify">
+                <p class="mt-4 sm:mt-6 text-gray-800 leading-relaxed text-sm sm:text-md text-justify">
                     Whether you're seeking a serene retreat, thrilling water adventures, or an exceptional dining experience, 
                     our expansive waterpark, private white-sand beach, and gourmet restaurants cater to every traveler’s dream.
                     Escape the ordinary and create lasting memories at JPark – where every moment is designed 
@@ -84,69 +80,64 @@
     </div>
 </section>
 
-<!-- Carousel Section -->
-<section class="relative py-20 bg-[#ffff]">
-
-    <!-- Carousel Container -->
+<section class="relative py-12 md:py-20 bg-[#ffff]">
     <div class="container mx-auto px-4 relative">
-        <h2 class="text-3xl md:text-4xl text-[#2887bf] text-center mb-8 tracking-widest font-bold uppercase font-[Roboto_Flex]">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl text-[#2887bf] text-center mb-6 md:mb-8 tracking-widest font-bold uppercase font-[Roboto_Flex]">
             Highlights of JPark Island Resort
         </h2>
-        <p class="text-center text-gray-800 text-xl mb-8 font-extrabold font-[Dancing_Script]">
+        <p class="text-center text-gray-800 text-lg sm:text-xl mb-6 md:mb-8 font-extrabold font-[Dancing_Script]">
             When comfort, flavors, adventures, and celebrations meet at one place called paradise.
         </p>
 
-        <!-- Carousel Wrapper -->
         <div class="relative overflow-hidden">
             <div class="flex transition-transform duration-500 ease-in-out" id="carousel-slides">
-                <div class="min-w-[33.33%] flex-shrink-0 p-2">
-                    <img src="images/room_main.webp" alt="Luxury Room" class="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg">
+                <div class="min-w-full sm:min-w-[50%] md:min-w-[33.33%] flex-shrink-0 p-2">
+                    <img src="images/room_main.webp" alt="Luxury Room" class="w-full h-48 sm:h-64 md:h-80 object-cover rounded-lg shadow-lg">
                 </div>
-                <div class="min-w-[33.33%] flex-shrink-0 p-2">
-                    <img src="images/villa_main.webp" alt="Luxury Villa" class="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg">
+                <div class="min-w-full sm:min-w-[50%] md:min-w-[33.33%] flex-shrink-0 p-2">
+                    <img src="images/villa_main.webp" alt="Luxury Villa" class="w-full h-48 sm:h-64 md:h-80 object-cover rounded-lg shadow-lg">
                 </div>
-                <div class="min-w-[33.33%] flex-shrink-0 p-2">
-                    <img src="images/resto_main.webp" alt="Gourmet Dining" class="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg">
+                <div class="min-w-full sm:min-w-[50%] md:min-w-[33.33%] flex-shrink-0 p-2">
+                    <img src="images/resto_main.webp" alt="Gourmet Dining" class="w-full h-48 sm:h-64 md:h-80 object-cover rounded-lg shadow-lg">
                 </div>
-                <div class="min-w-[33.33%] flex-shrink-0 p-2">
-                    <img src="images/bar_main.webp" alt="Luxury Bar" class="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg">
+                <div class="min-w-full sm:min-w-[50%] md:min-w-[33.33%] flex-shrink-0 p-2">
+                    <img src="images/bar_main.webp" alt="Luxury Bar" class="w-full h-48 sm:h-64 md:h-80 object-cover rounded-lg shadow-lg">
                 </div>
-                <div class="min-w-[33.33%] flex-shrink-0 p-2">
-                    <img src="images/pool_main.webp" alt="Adventure Activities" class="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg">
+                <div class="min-w-full sm:min-w-[50%] md:min-w-[33.33%] flex-shrink-0 p-2">
+                    <img src="images/pool_main.webp" alt="Adventure Activities" class="w-full h-48 sm:h-64 md:h-80 object-cover rounded-lg shadow-lg">
                 </div>
-                <div class="min-w-[33.33%] flex-shrink-0 p-2">
-                    <img src="images/park_main.webp" alt="Adventure Activities" class="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg">
+                <div class="min-w-full sm:min-w-[50%] md:min-w-[33.33%] flex-shrink-0 p-2">
+                    <img src="images/park_main.webp" alt="Adventure Activities" class="w-full h-48 sm:h-64 md:h-80 object-cover rounded-lg shadow-lg">
                 </div>
-                <div class="min-w-[33.33%] flex-shrink-0 p-2">
-                    <img src="images/i_venue.webp" alt="Indoor Venue" class="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg">
+                <div class="min-w-full sm:min-w-[50%] md:min-w-[33.33%] flex-shrink-0 p-2">
+                    <img src="images/i_venue.webp" alt="Indoor Venue" class="w-full h-48 sm:h-64 md:h-80 object-cover rounded-lg shadow-lg">
                 </div>
-                <div class="min-w-[33.33%] flex-shrink-0 p-2">
-                    <img src="images/o_venue.webp" alt="Outdoor Venue" class="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg">
+                <div class="min-w-full sm:min-w-[50%] md:min-w-[33.33%] flex-shrink-0 p-2">
+                    <img src="images/o_venue.webp" alt="Outdoor Venue" class="w-full h-48 sm:h-64 md:h-80 object-cover rounded-lg shadow-lg">
                 </div>
             </div>
 
-            <button class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white/50 p-3 rounded-full hover:bg-white/80 transition duration-300 z-20" id="prev-slide">
+            <button class="absolute top-1/2 left-2 sm:left-4 transform -translate-y-1/2 bg-white/50 p-2 sm:p-3 rounded-full hover:bg-white/80 transition duration-300 z-20" id="prev-slide">
                 <i class="fas fa-chevron-left text-[#2887bf]"></i>
             </button>
-            <button class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white/50 p-3 rounded-full hover:bg-white/80 transition duration-300 z-20" id="next-slide">
+            <button class="absolute top-1/2 right-2 sm:right-4 transform -translate-y-1/2 bg-white/50 p-2 sm:p-3 rounded-full hover:bg-white/80 transition duration-300 z-20" id="next-slide">
                 <i class="fas fa-chevron-right text-[#2887bf]"></i>
             </button>
         </div>
     </div>
 </section>
 
-<!-- Map Section -->
-<section class="py-20 bg-[#f5f5f5]">
+<section class="py-12 md:py-20 bg-[#f5f5f5]">
     <div class="container mx-auto px-4">
-        <h2 class="text-3xl md:text-4xl text-[#2887bf] text-center mb-8 tracking-widest font-bold uppercase font-[Roboto_Flex]">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl text-[#2887bf] text-center mb-6 md:mb-8 tracking-widest font-bold uppercase font-[Roboto_Flex]">
             Find Your Adventure
         </h2>
-        <p class="text-center text-gray-700 text-lg mb-8 font-[Roboto_Flex]">
+        <p class="text-center text-gray-700 text-sm sm:text-lg mb-6 md:mb-8 font-[Roboto_Flex]">
             Located in the heart of paradise, JPark Island Resort and Waterpark is your gateway to fun and excitement!
         </p>
         <div class="rounded-lg overflow-hidden shadow-2xl border-4 border-[#2887bf]">
             <iframe 
-                class="w-full h-96"
+                class="w-full h-48 sm:h-64 md:h-96"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3061.8701896701673!2d123.99301047368895!3d10.282783268107758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a990b5b78ec603%3A0x4b79bfe360b09e7c!2sJpark%20Island%20Resort%20and%20Waterpark%2C%20Cebu!5e1!3m2!1sen!2sph!4v1741840984924!5m2!1sen!2sph"
                 style="border:0;"
                 allowfullscreen=""
@@ -157,7 +148,7 @@
     </div>
 </section>
 
-<!-- Floating Weather Button with Tooltip -->
+<!-- Floating Weather Button -->
 <div class="fixed bottom-5 right-5 group">
     <button id="openModal" class="bg-yellow-300 text-white p-3 sm:p-4 rounded-full shadow-lg hover:bg-yellow-500 transition-all duration-300 transform hover:scale-110 hover:rotate-12">
         <i class="fas fa-cloud-sun text-xl sm:text-2xl"></i> 
@@ -180,11 +171,9 @@
     </div>
 </div>
 
-<!-- Footer -->
 <footer class="bg-[#242659] text-white py-8 sm:py-12">
     <div class="container mx-auto px-4">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
-            <!-- Call to Action -->
             <div class="text-center md:text-left">
                 <h3 class="text-lg sm:text-xl font-bold uppercase tracking-widest mb-2 sm:mb-4 font-[Roboto_Flex]">
                     Ready for Adventure?
@@ -196,37 +185,30 @@
                     Book Now
                 </a>
             </div>
-
-            <!-- Social Media -->
+  
             <div class="text-center">
                 <h3 class="text-lg sm:text-xl font-bold uppercase tracking-widest mb-2 sm:mb-4 font-[Roboto_Flex]">
                     Follow Us
                 </h3>
                 <div class="flex justify-center space-x-4 sm:space-x-6">
-                    <!-- Facebook -->
                     <a href="https://web.facebook.com/jparkislandresort" class="text-gray-300 hover:text-[#2887bf] transition duration-300">
                         <i class="fab fa-facebook fa-lg sm:fa-2x"></i>
                     </a>
-                    <!-- Instagram -->
                     <a href="https://www.instagram.com/jparkislandresort?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="text-gray-300 hover:text-[#ffff] transition duration-300">
                         <i class="fab fa-instagram fa-lg sm:fa-2x"></i>
                     </a>
-                    <!-- TikTok -->
-                    <a href="#" class="text-gray-300 hover:text-[#2887bf] transition duration-300">
+                    <a href="https://web.facebook.com/jparkislandresort" class="text-gray-300 hover:text-[#2887bf] transition duration-300">
                         <i class="fab fa-tiktok fa-lg sm:fa-2x"></i>
                     </a>
-                    <!-- YouTube -->
-                    <a href="#" class="text-gray-300 hover:text-[#2887bf] transition duration-300">
+                    <a href="https://web.facebook.com/jparkislandresort" class="text-gray-300 hover:text-[#2887bf] transition duration-300">
                         <i class="fab fa-youtube fa-lg sm:fa-2x"></i>
                     </a>
-                    <!-- X (Twitter) -->
-                    <a href="#" class="text-gray-300 hover:text-[#2887bf] transition duration-300">
+                    <a href="https://web.facebook.com/jparkislandresort" class="text-gray-300 hover:text-[#2887bf] transition duration-300">
                         <i class="fab fa-x-twitter fa-lg sm:fa-2x"></i>
                     </a>
                 </div>
             </div>
-
-            <!-- Newsletter -->
+  
             <div class="text-center md:text-right">
                 <h3 class="text-lg sm:text-xl font-bold uppercase tracking-widest mb-2 sm:mb-4 font-[Roboto_Flex]">
                     Stay Updated
@@ -242,13 +224,12 @@
                 </form>
             </div>
         </div>
-
-        <!-- Copyright -->
+  
         <div class="border-t border-gray-700 mt-6 sm:mt-8 pt-6 sm:pt-8 text-center text-gray-400 text-xs sm:text-sm">
-            &copy; 2023 JPark Island Resort. All rights reserved.
+            &copy; 2025 JPark Island Resort. Esquejo Trexie E. All rights reserved.
         </div>
     </div>
-</footer>
+  </footer>
 
 <script>
     document.addEventListener('DOMContentLoaded', function () {
@@ -266,9 +247,8 @@
     const nextButton = document.getElementById('next-slide');
     let currentIndex = 0;
     const totalSlides = carouselSlides.children.length;
-    const slidesToShow = 3; // Number of images to show at a time
+    const slidesToShow = 3; 
 
-    // Clone the first and last set of slides for seamless looping
     const firstClone = carouselSlides.children[0].cloneNode(true);
     const secondClone = carouselSlides.children[1].cloneNode(true);
     const lastClone = carouselSlides.children[totalSlides - 1].cloneNode(true);
@@ -279,14 +259,11 @@
     carouselSlides.insertBefore(lastClone, carouselSlides.children[0]);
     carouselSlides.insertBefore(secondLastClone, carouselSlides.children[0]);
 
-    // Update total slides count after cloning
     const updatedTotalSlides = carouselSlides.children.length;
 
-    // Function to move to the next set of slides
     function nextSlide() {
         currentIndex++;
         if (currentIndex > updatedTotalSlides - slidesToShow) {
-            // Smoothly transition to the cloned slides at the beginning
             carouselSlides.style.transition = 'none';
             currentIndex = 0;
             updateCarousel();
@@ -301,11 +278,9 @@
         }
     }
 
-    // Function to move to the previous set of slides
     function prevSlide() {
         currentIndex--;
         if (currentIndex < 0) {
-            // Smoothly transition to the cloned slides at the end
             carouselSlides.style.transition = 'none';
             currentIndex = updatedTotalSlides - slidesToShow;
             updateCarousel();
@@ -320,21 +295,18 @@
         }
     }
 
-    // Function to update the carousel position
     function updateCarousel() {
         const offset = -currentIndex * (100 / slidesToShow);
         carouselSlides.style.transform = `translateX(${offset}%)`;
     }
 
-    // Event listeners for navigation buttons
     nextButton.addEventListener('click', nextSlide);
     prevButton.addEventListener('click', prevSlide);
 
-    // Optional: Auto-play the carousel
     setInterval(nextSlide, 5000); 
     });
 
-    const apiKey = "87583adbc66440f48db10422251403"; 
+    const apiKey = "f7a7443e3b23430ba9c151159251703"; 
     const city = "Cebu";
     const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=no`;
 
@@ -354,10 +326,9 @@
         }
     }
 
-    // Modal Controls
     document.getElementById("openModal").addEventListener("click", () => {
         document.getElementById("weatherModal").classList.remove("hidden");
-        fetchWeather(); // Fetch data when modal opens
+        fetchWeather(); 
     });
 
     document.getElementById("closeModal").addEventListener("click", () => {
@@ -367,7 +338,6 @@
     fetchWeather();
 
 </script>
-
 
 </body>
 </html>
